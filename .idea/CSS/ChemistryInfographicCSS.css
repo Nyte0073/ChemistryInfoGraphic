@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+    color: white;
+    background-color: #1E1E1E;
+}
+
+.title-container {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
