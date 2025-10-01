@@ -6,7 +6,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    font-family: "JetBrains Mono Light";
+    font-family: "JetBrains Mono Light", serif;
     font-weight: bold;
     color: white;
     background-color: #1E1E1E;
