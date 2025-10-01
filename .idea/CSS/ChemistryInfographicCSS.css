@@ -6,20 +6,88 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    font-family: "IBM Plex Mono";
+    font-family: "JetBrains Mono Light";
     font-weight: bold;
     color: white;
     background-color: #1E1E1E;
+    overflow-x: hidden;
+}
+
+:root {
+    --scale: 60;
+    --vheight: 100vh;
+    --computer-height: 1536;
+    --rem-scalar: calc((var(--vheight)/var(--computer-height)) * var(--scale));
 }
 
 .title-container {
     height: fit-content;
     width: fit-content;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: var(--rem-scalar);
+    box-sizing: border-box;
+    padding: var(--rem-scalar);
+    background-color: #2f2e2e;
+    border-radius: var(--rem-scalar);
+    outline-width: calc(0.2 * var(--rem-scalar));
+    outline-color: white;
+    outline-style: solid;
 }
 
 .title {
     text-align: center;
-    font-size: 2rem;
+    font-size: calc(var(--rem-scalar));
 }
+
+.main-container {
+    margin: auto;
+    margin-top: var(--rem-scalar);
+    display: flex;
+    border-radius: var(--rem-scalar);
+    height: 10%;
+    width: 90%;
+}
+
+.article-container {
+    list-style-type: none;
+    height: 35vw;
+    width: 90%;
+    margin: auto;
+    margin-top: var(--rem-scalar);
+    display: flex;
+    border-radius: var(--rem-scalar);
+    box-sizing: border-box;
+    padding: var(--rem-scalar);
+}
+
+li {
+   flex-grow: 1;
+    margin-left: var(--rem-scalar);
+    margin-right: var(--rem-scalar);
+    outline: calc(0.1 * var(--rem-scalar)) solid white;
+    height: calc(var(--rem-scalar) * 16);
+    margin-left: var(--rem-scalar);
+    margin-right: var(--rem-scalar);
+    border-radius: calc(0.4 * var(--rem-scalar));
+    box-sizing: border-box;
+    padding: calc(0.4 * var(--rem-scalar));
+    background-color: #2f2e2e;
+}
+
+.images-container {
+    margin: auto;
+    margin-top: var(--rem-scalar);
+    display: flex;
+    box-sizing: border-box;
+    height: 40%;
+    width: 80%;
+    outline: calc(0.2 * var(--rem-scalar)) solid white;
+    border-radius: var(--rem-scalar);
+}
+
+img {
+    border-radius: var(--rem-scalar);
+    flex-grow: 1;
+    padding: calc(0.5 * var(--rem-scalar));
+}
+
