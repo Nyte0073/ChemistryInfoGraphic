@@ -104,7 +104,6 @@ html, body {
     display: inherit;
     height: 80vh;
     width: 90vw;
-    outline: 1vh solid white;
     margin-top: 8vh;
     align-self: center;
 }
